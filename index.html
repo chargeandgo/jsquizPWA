@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Quiz Project Template</title>
+	<script src="quizproject.js"></script>
+	<link rel="stylesheet" type="text/css" href="quizproject.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!--ページとすべての画像などのリソース類を読み込んでから処理を実行する-->
+<body onLoad="initialize()">
+	<div id="menu">
+		<h1>Welcome to Trivia Quiz!</h1>
+		<button class="button1" onclick="toQuiz()">Click to Start</button>
+	</div>
+
+	<div id="lightbox" onclick="nextPage()">
+		<div id="message">This is a message</div>
+	</div>
+	
+	<div id="countdown">time left</div>
+
+	<div class="grid-container">
+	  <div class="header">
+		<div id="question">The Question</div>
+	  </div>
+	  
+	  <div class="left">
+		<div>
+		 <div class="options" id="a" onclick="markIt('a')">A.</div>
+		 <div class="options" id="b" onclick="markIt('b')">B.</div>
+		 <div class="options" id="c" onclick="markIt('c')">C.</div>
+		 <div class="options" id="d" onclick="markIt('d')">D.</div>
+		</div>
+	  </div> 
+
+	  
+	  <div class="right">
+		<img id="image" src="quizimages/mousetrap.jpg" alt="mousetrap">
+	  </div>
+	  
+	  <div class="footer1" onclick="nextQuestion()">
+		<p>Next Question</p>
+	  </div>
+	  
+	  <div class="footer2">
+		<p>Score</p>
+		<p id="score">0</p>
+	  </div>
+	</div>
+	
+	<div id="review">
+		<div id="feedback">You Finished</div>
+		<button onclick="retry()">Click to Retry</button>
+	</div>
+</body>
+</html>

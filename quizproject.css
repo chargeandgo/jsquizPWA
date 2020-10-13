@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #353531;
+}
+
+#menu{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #EC4E20;
+	width:100%;
+    height:100%;
+	text-align: center; 
+	display: block;
+}
+
+h1 {
+	text-align: center;
+	margin: 2em;
+}
+
+.button1 {
+	text-align: center;
+	padding: 1em;
+	
+}
+
+#countdown {
+	color: #fff;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #016FB9;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+      'header header header header' 
+      'left left left left' 
+      'right right right right' 
+      'footer1 footer1 footer1 footer1'
+	  'footer2 footer2 footer2 footer2';
+      grid-template-columns: repeat(4, 25%);
+	  
+}
+  
+.left,
+.right,
+.header,
+.footer1, footer2 {
+  
+  display:grid;
+  justify-items:center;  
+  align-items:center;  
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+  background-color: #FF9505;
+}
+
+
+/* Style the right column */
+.right {
+  grid-area: right;
+  background-color: #FF9505;
+}
+
+/* Style the footer */
+.footer1 {
+  grid-area: footer1;
+  background-color: #016FB9;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer2 {
+  grid-area: footer2;
+  background-color: #016FB9;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+
+#question {
+  font-size: 2em;
+  font-weight:bold;
+}
+
+
+.options {
+   font-size:1.5em;
+   padding:0.4em;
+}
+
+.options:hover {
+	text-decoration: underline;
+}
+
+#lightbox {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0, 0.7);
+	width:100%;
+    height:100%;
+}
+
+
+#message {
+	width: 80%;
+	padding: 20px;
+	background-color: #ffffff;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	font-size: 5em;
+	transform: translate(-50%, -50%);
+}
+
+#review {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #016FB9;
+	width:100%;
+    height:100%;
+	color: #fff;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (min-width: 600px) {
+ .grid-container  {
+  grid-template-areas: 
+    'header header header header' 
+    'left left right right' 
+    'footer1 footer1 footer2 footer2';
+  
+}
+}
