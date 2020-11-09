@@ -1,0 +1,242 @@
+* {
+  margin: 0px;
+    
+}
+
+body {
+  font-family: serif;
+    background-color: #d8eefe;
+}
+
+.title {
+	width: 100%;
+	height: 7vh;
+	background-color: #094067;
+	text-align: center;
+	margin: 0px;
+    padding-bottom: 10vh;
+}
+
+
+
+h1 {
+	padding-top: 5vh;
+    background-color: #094067;
+    color: #fffffe;
+    padding-bottom: 5vh;
+    font-size: 8vh;
+}
+
+#button {
+	text-align: center;
+	width:  8vh;
+    height: 5vh;
+	background-color: #3da9fc;
+    color: #fffffe;
+    border: none;
+    border-radius: 5vh;
+    transform: translate(0%, 10%);
+}
+
+#search {
+	height: 4vh;
+    width: 40vh;
+}
+
+#namesearch {
+	height: 4vh;
+    width: 40vh;
+}
+
+#button:hover {
+    background-color: #094067;
+}
+
+input[type="text"] {
+	font-size: 2.5vh;	
+}
+
+.lookup {
+	text-align: center;
+}
+
+
+.explain {
+	margin-top: 2vh;
+}
+
+#main {
+	margin: 3vh;
+	padding-bottom: 5vh;
+
+}
+
+hr {
+    display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+    color:#094067;
+}
+
+.div {
+	margin: 5vh;
+	min-height: 50vh;
+}
+
+#lightbox {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0, 0.7);
+	width:100%;
+    height:100%;
+}
+
+#message  {
+	width: 80%;
+	padding: 20px;
+	background-color: #ffffff;
+	/*text-align: center; */
+	position: absolute;
+	top: 50%;
+	left:50%;
+	font-size: 2em;
+	transform: translate(-50%, -50%);
+	border-radius: 15px;
+}
+
+
+.showtitle {
+	text-align: center;
+	font-size: 5vh;
+	margin: 3vh;
+    margin-top: 2vh;
+}
+
+.genre {
+	font-size: 2vh;
+	margin-bottom: 1.5vh;
+    text-align: center;
+}
+
+.rating {
+	font-size: 2vh;
+	margin-bottom: 1.5vh;
+    text-align: center;
+}
+
+.summary {
+	font-size: 2vh;
+	margin-bottom: 1.5vh;
+    text-align: center;
+}
+
+.image {
+	margin-bottom: 1.5vh;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.episodes {
+	font-size: 2vh;
+}
+
+.episodes {
+	text-align: center;
+}
+
+.episode {
+	margin-bottom: 1.5vh;
+}
+
+.picture {
+	text-align: center;
+}
+
+.season{
+	font-size: 3vh;
+	text-align: center;
+}
+
+.name {
+	font-size: 5vh;
+    text-align: center;
+    font-weight: 300;
+}
+
+.number {
+	/*padding-left: 60% !important;*/
+	font-size: 3vh;
+	text-align: center;
+}
+
+
+.tvmaze {
+	text-decoration: underline;
+}
+
+.tvmaze:hover {
+	color: #ef4565;
+}
+
+.epi {
+	text-decoration: none;
+	color: #3da9fc;
+
+}
+
+.epi:hover {
+	text-decoration: underline;
+	color: #ef4565;
+}
+
+@media screen and (max-width: 750px) {
+	.title{
+		height: 5vh;
+	}
+	
+	h1 {
+		font-size: 5vh;
+	}
+
+	#message {
+		width: 80%;
+		font-size: 1em;
+	}
+
+	.genre,
+	.rating,
+	.summary {
+		font-size: 2.5vh;
+	}
+
+	.explain {
+		padding: 1vh;
+		font-size: 2vh;
+	}
+
+	#search {
+		height: 4vh;
+		width: 30vh;
+	}
+
+	#button {
+		transform: translate(0%, 10%);
+	}
+
+	input[type="text"] {
+		font-size: 3vh;
+		
+	}
+
+	#message {
+		text-align: center;
+	}
+}
+
+

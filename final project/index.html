@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="manifest" href="manifest.json">
+    <title>TV Show at TV Maze</title>
+
+    <!-- include an external style sheet -->
+    <link rel="stylesheet" href="finalproject.css">
+
+    <!-- include an external JavaScript file -->
+    <script src="finalproject.js"></script>
+  </head>
+
+  <body>
+    <div class="title">
+		<h1>TV shows at TV maze</h1>
+	</div>
+	
+	<div id="menu">
+		<a href="index.html">Search by title</a>
+		<a href="finalproject.html">Search by people</a>
+	</div>
+
+     <div id="main">
+
+	  </div>
+
+		<div id="lightbox" onclick="closeLightBox()">
+			<div id="message">This is a message</div>
+		</div>
+		
+	
+
+
+
+     <br>
+
+	 <div class="lookup">
+		 <input type="text" id="search" placeholder="  Search...">
+		 <button id="button" onclick="fetchData()"><i class="fa fa-search" style="font-size:30px;"></i></button>
+		 <p class="explain">This script uses a fetch request to get TV Data from a free api called <a class="tvmaze" href="https://www.tvmaze.com/api">TV Maze</a>.</p>
+	 </div>
+	 
+
+
+  </body>
+
+</html>
